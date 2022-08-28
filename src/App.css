@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 :root {
   font-size: 16px;
   --primary-blue: rgb(201 226 230);
@@ -65,4 +70,50 @@ header > a {
 
 header > a > img {
   height: 100%;
+}
+
+/* Card component */
+
+.cardContainer {
+  display: flex;
+  width: 100vw;
+  height: 20vh;
+  border-bottom: 1px solid grey;
+}
+
+.cardContainer div.subCardImg > img {
+  object-fit: contain;
+  height: 120px;
+  width: 70px;
+}
+
+.cardContainer div.subCardImg {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer div.subCard {
+  width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardContainer div.subCard h2 {
+  margin-bottom: 10px;
+}
+
+.cardContainer div.subCard h4 {
+  margin-bottom: 10px;
+  color: rgb(141, 141, 141);
+  font-weight: lighter;
+}
+
+.cardContainer div.subCard p {
+  font-size: 0.7rem;
+  font-weight: bold;
 }
