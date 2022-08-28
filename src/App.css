@@ -47,3 +47,22 @@ body {
 #home div.card-container a {
   color: black;
 }
+
+/* Header component */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh;
+  background-color: #3dc4fc;
+}
+
+header > a {
+  height: 60%;
+}
+
+header > a > img {
+  height: 100%;
+}
