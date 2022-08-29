@@ -10,13 +10,24 @@ export default function BeerDetails() {
 
   useEffect(() => {
     const getData = async () => {
-      try {
-        const response = await axios.get(
-          `https://ih-beers-api2.herokuapp.com/beers/${beerId}`
-        );
-        setBeer(response.data);
-      } catch (error) {
-        console.error(error);
+      if (beerId) {
+        try {
+          const response = await axios.get(
+            `https://ih-beers-api2.herokuapp.com/beers/${beerId}`
+          );
+          setBeer(response.data);
+        } catch (error) {
+          console.error(error);
+        }
+      } else {
+        try {
+          const response = await axios.get(
+            `https://ih-beers-api2.herokuapp.com/beers/random`
+          );
+          setBeer(response.data);
+        } catch (error) {
+          console.error(error);
+        }
       }
     };
     getData();
