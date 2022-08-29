@@ -165,3 +165,41 @@ header > a > img {
   height: 35vh;
   padding: 15px;
 }
+
+/* New Beer view */
+
+form {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 15px;
+  border: 1px solid rgb(216, 216, 216);
+}
+
+textarea {
+  margin-bottom: 15px;
+  border-radius: 15px;
+  border: 1px solid rgb(216, 216, 216);
+  padding: 12px;
+}
+
+.btn-style {
+  background-color: #3dc4fc;
+  border-radius: 25px;
+  color: white;
+  padding: 12px 5px;
+  border: 1px solid rgb(216, 216, 216);
+  margin-top: 20px;
+}
