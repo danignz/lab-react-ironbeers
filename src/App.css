@@ -13,7 +13,7 @@ a {
 
 :root {
   font-size: 16px;
-  --primary-blue: rgb(201 226 230);
+  --font-grey: #a8a8a8;
 }
 
 body {
@@ -116,4 +116,52 @@ header > a > img {
 .cardContainer div.subCard p {
   font-size: 0.7rem;
   font-weight: bold;
+}
+
+/* Card Single Beer component */
+
+#containerSingleBeer {
+  height: 90vh;
+  margin-top: 5vh;
+}
+
+#containerSingleBeer > figure {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerSingleBeer figure img {
+  height: 80%;
+  width: 30%;
+  object-fit: contain;
+}
+
+#subContainerSingleBeer {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+#subContainerSingleBeer div:nth-child(2) p {
+  align-self: flex-end;
+}
+
+#subContainerSingleBeer div p {
+  margin: 5px 5px 5px 0px;
+}
+
+#subContainerSingleBeer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#thirdContainerSingleBeer {
+  height: 35vh;
+  padding: 15px;
 }
